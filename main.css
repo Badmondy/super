@@ -212,3 +212,20 @@ h6{
    
     
 }
+.slider{
+    display:block;
+    position:absolute;
+    width:200px;
+    margin: 0 auto;
+    margin-left:220px;
+    margin-top:100px;
+}
+#demo{
+    display:block;
+    position:absolute;
+    font-size:25px;
+    margin-top:70px;
+    margin-left:310px;
+    color:black;
+    
+}
