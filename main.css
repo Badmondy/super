@@ -200,7 +200,7 @@ h6{
     color:rgb(0, 0, 0);
 }
 #down{
-    content:url(planedecent.png);
+    content:url(/planedecent.png);
     display:block;
     position:absolute;
     height:3em;
