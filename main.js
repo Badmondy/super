@@ -47,13 +47,12 @@ var q = slider.value/10;
 
 
 
-
 function HandleReset(){
     document.querySelector("#reset").reset();
     er = " ";
     document.querySelector("#result").textContent = er;
     document.querySelector("#result2").textContent = er;
     output.textContent = "50";
-    windows.location.reload();}
+    location.reload();}
  
 
