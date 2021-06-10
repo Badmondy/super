@@ -7,13 +7,13 @@
     <title>Top of decent calculator</title>
     <meta name='viewport'
         content='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi' />
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css' />
+    <link rel='stylesheet' type='text/css' media='screen' href='test.css' />
     <script src="main.js" defer></script>
 </head>
 
 
 <body class="bgimg">
-    
+    <div class="app-wrap">
         <h1>Top of decent calculator</h1>
         <a href="https://github.com/Badmondy" style="display:block" target="_blank">
         <img src="githubicon.png" class="icon" alt="github"/></a>
@@ -31,35 +31,42 @@
                 <br>
                 <input type="box" id="desalt" class="inputboxes" placeholder="10000" autocomplete="off" autofocus="off">
                 <br>
-                <speed class="textgs" id="gs1"> What's your groundspeed? <small style="font-size:20px">( in kts)</small></speed>
+                <speed class="textgs" id="gs1"> What's your groundspeed? <small style="font-size:1.3vh; color:rgb(221, 36, 36);"><u>( in kts)</u></small></speed>
                 <br>
-                <input type="box" id="gs" class="inputboxes" value="0" placeholder="450" autocomplete="off" autofocus="off">
+                <input type="box" id="gs" class="inputboxes" placeholder="450" autocomplete="off" autofocus="off">
                 <br>
                 <direction class="textdir"> Wind direction</direction><br>
                 <select class="selectwind" id="select">
                     <option value="2" onselect="WindArrow();">Headwind</option>
                     <option value="1" onselect="WindArrow();">Tailwind</option>
                 </select><br>
-                <button class="button1" type="button" onclick="Handlecalc();"> <p style="margin-left:-30px;"> Calculate</p></button>
-                <button class="button2" type="button" onclick="HandleReset();"><p style="margin-left:-20px;"> Reset</p> </button>
-                <div class="resultat"> 
-                    <p id="result">
-                        <p id="result2"> </p>
-                    </p> 
-                    <div><img src="planedecent.png" id="down" alt ="plane" > </div>
-                </div>
-                 <div class="slidecontainer">
+                <button class="button1" type="button" onclick="Handlecalc();"> <p> Calculate </p></button>
+                <button class="button2" type="button" onclick="HandleReset();"><p> Reset </p> </button>
+                <div class="slidecontainer">
                     <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
                     <p><span id="demo">
                     </span></p>
                   </div>
+                  <div>
+                    <img src="arrowA.png" id="arrow">
+                    <img src="planedecent.png" id="down" alt ="plane" > 
+                
+                </div> 
+                <div class="resultat"> 
+                    <p id="result">
+                        <p id="result2"> </p>
+                    </p> 
+                   
+                </div> 
+                
                   <div id="demo1">
                       
                   </div>
                   <div>
-                    <img src="arrowA.png" id="arrow"> </div>  
+                     
             
     </div>
+</div>
 </body>
 
 </html>
