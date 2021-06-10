@@ -34,7 +34,7 @@ var q = slider.value/10;
         windComp = alt_fin - q;
         fpm = gs*5;
         document.querySelector('#arrow').style.transform = 'rotate(180deg)';
-        document.querySelector('#down').style.transform = 'translate(500px,400px)';}
+        document.querySelector('#down').style.transform = 'translate(33vh,9vh)rotate(-20deg)';}
         
     
     
